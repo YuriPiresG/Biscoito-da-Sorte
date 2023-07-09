@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(-45deg, #190361, #b0f, #013b57, #03fdc3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 43rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.8);
+}
+h1 {
+  width: 26rem;
+
+  color: #34355b;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 1.4rem;
+  color: #34355b;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.biscoitoUm {
+  margin-top: 2.6rem;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.biscoitoUm:hover {
+  cursor: pointer;
+  animation: shake infinite 0.5s linear;
+}
+
+.screenTwoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 47rem;
+}
+
+.screenTwoContent h1 {
+  width: 30rem;
+  color: #34355b;
+  font-size: 2.4rem;
+}
+
+@keyframes bringDiv {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+    transform-origin: bottom center;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.luckMessage {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  margin-top: 1.7rem;
+  margin-bottom: 1.7rem;
+
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  animation: bringDiv 1s forwards;
+}
+
+.luckMessage h2 {
+  text-align: center;
+  font-family: "Dancing Script";
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.9rem;
+}
+
+.screenTwoContent img {
+  margin-top: 7rem;
+}
+
+button {
+  display: flex;
+  margin-top: 6rem;
+  padding: 1.6rem;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 0;
+
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  border-radius: 0.4rem;
+  background: #ff9500;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #ff9f00;
+}
